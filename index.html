@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ben Rogers Clone</title>
+  <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-
+  
   <!--  Navigation -->
  <header>
   <nav class="navbar">
@@ -24,14 +24,46 @@
   </nav>
 </header>
 
-  <!--  Sections -->
-  <section id="home" class="section-home"></section>
-  <section id="projects" class="section-projects"></section>
-  <section id="skills" class="section-skills"></section>
-  <section id="experience" class="section-experience"></section>
-  <section id="education" class="section-education"></section>
-  <section id="contact" class="section-contact"></section>
 
-  <script src="script.js"></script>
+
+  <!--  Sections -->
+  <section id="home" class="home-section">
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+    
+    <div class="home-content">
+      <img src="./assets/profile.jpg" alt="Profile Picture" class="profile-img" />
+      <p class="intro-text">
+        <strong>Hello, I'm YunJu.</strong> I build and maintain full-stack systems from modern frontends to event-driven backends and infrastructure — with a focus on performance, scalability, and developer experience.
+      </p>
+      <div class="button-group">
+        <a href="https://github.com/PYunJu" class="btn btn-white">GitHub</a>
+        <a href="#" class="btn btn-dark">Velog</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="projects" class="section-projects">
+
+  </section>
+  <section id="skills" class="section-skills">
+
+  </section>
+  <section id="experience" class="section-experience">
+
+  </section>
+  <section id="education" class="section-education">
+
+  </section>
+  <section id="contact" class="section-contact">
+
+  </section>
+
+
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="js/particles-config.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 </html>
