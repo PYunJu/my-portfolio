@@ -5,65 +5,79 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet" />
 </head>
 <body>
-  
-  <!--  Navigation -->
- <header>
-  <nav class="navbar">
-    <ul class="nav-links">
-      <div class="highlight"></div>
-      <li><a href="#home" >Home</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
 
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li class="highlight"></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-
-  <!--  Sections -->
-  <section id="home" class="home-section">
-    <!-- Particle Background -->
+  <!-- Home Section -->
+  <section id="home" class="section-home">
     <div id="particles-js"></div>
-    
     <div class="home-content">
-      <img src="./assets/profile.jpg" alt="Profile Picture" class="profile-img" />
+      <img src="./assets/profile.jpg" alt="Portrait of YunJu" class="profile-img" />
       <p class="intro-text">
         <strong>Hello, I'm YunJu.</strong> I build and maintain full-stack systems from modern frontends to event-driven backends and infrastructure — with a focus on performance, scalability, and developer experience.
       </p>
       <div class="button-group">
-        <a href="https://github.com/PYunJu" class="btn btn-white">GitHub</a>
-        <a href="#" class="btn btn-dark">Velog</a>
+        <a href="https://github.com/PYunJu" class="btn btn-white" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://velog.io/@pkrdbswn/posts" class="btn btn-dark" target="_blank" rel="noopener noreferrer">Velog</a>
       </div>
     </div>
   </section>
 
-
+  <!-- Projects Section -->
   <section id="projects" class="section-projects">
+    <h2 class="section-title">My Projects</h2>
 
+    <article class="project-item">
+      <div class="project-text">
+        <h3 class="project-name">Crypto Sentiment Analysis</h3>
+        <div class="project-tech">
+          <strong>Made with:</strong>
+          <img src="./assets/icons/aws.png" alt="AWS Icon" />
+          <img src="./assets/icons/js.png" alt="JavaScript Icon" />
+          <img src="./assets/icons/react.png" alt="React Icon" />
+          <img src="./assets/icons/bootstrap.png" alt = "Bootstrap Icon" />
+          <img src="./assets/icons/express.png" alt="Express Icon" />
+        </div>
+        <p class="project-description">
+          Cryptocurrency sentiment analysis website based on Twitter posts. Users can see the overall sentiment (positive, negative, or neutral) of various cryptocurrencies, along with keyword trends and average sentiment scores. <br> architecture leveraging ElastiCache, S3, EC2, and auto-scaling on AWS.
+        </p>
+        <div class="project-buttons">
+          <a href="#" class="btn demo-btn">Demo</a>
+          <a href="#" class="btn github-btn">GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-image">
+        <img src="./assets/project1.jpg" alt="Preview of Crypto Sentiment Analysis Project" />
+      </div>
+    </article>
   </section>
-  <section id="skills" class="section-skills">
 
-  </section>
-  <section id="experience" class="section-experience">
+  <!-- Placeholder Sections -->
+  <section id="skills" class="section-skills"></section>
+  <section id="experience" class="section-experience"></section>
+  <section id="education" class="section-education"></section>
+  <section id="contact" class="section-contact"></section>
 
-  </section>
-  <section id="education" class="section-education">
-
-  </section>
-  <section id="contact" class="section-contact">
-
-  </section>
-
-
-
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="js/particles-config.js"></script>
-  <script src="./js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
