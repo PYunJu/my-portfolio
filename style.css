@@ -89,7 +89,6 @@ body {
   background-color: #f8fafc;
 }
 
-.section-skills,
 .section-experience,
 .section-education,
 .section-contact {
@@ -194,7 +193,7 @@ body {
   background-color: #f8fafc;
 }
 
-/* 📍 프로젝트 제목 */
+/* 프로젝트 제목 */
 .section-title {
   text-align: center;
   font-size: 1.75rem;
@@ -202,7 +201,7 @@ body {
   margin-bottom: 4rem;
 }
 
-/* 📍 개별 프로젝트 카드 레이아웃 */
+/* 개별 프로젝트 카드 레이아웃 */
 
 .project-item {
   display: flex;
@@ -211,7 +210,7 @@ body {
   border-radius: 1rem;
   padding: 1.75rem;
   max-width: 950px;
-  margin: 0 auto 4rem auto;
+  margin: 0 auto 2rem auto;
   gap: 2rem;
   overflow: hidden;
   transition: background-color 0.3s ease; /* 부드러운 변화 */
@@ -323,3 +322,82 @@ body {
   object-position: center;
   display: block;
 }
+
+
+/* Skills 섹션 */
+.section-skills {
+  padding-top: 4rem;                                  
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-skills .section-title {
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: #111827;
+}
+
+/* 카테고리 전체 블럭 */
+.skills-block {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  padding: 2rem 8rem;
+  border-top: 1px solid #e5e7eb;
+  column-gap: 8rem; 
+}
+
+.skills-block:first-of-type {
+  border-top: none;
+}
+
+/* 왼쪽 카테고리 제목 */
+.skills-label {
+  width: 120px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #374151;
+  padding-top: 0.4rem;
+  flex-shrink: 0;
+}
+
+/* 오른쪽 기술 리스트: 5개씩 줄바꿈 */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;                       /* 세로: 0.75rem, 가로: 1rem */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+}
+
+/* 기술 태그 */
+.skills-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #f3f4f6;
+  border-radius: 9999px;
+  padding: 0.4rem 0.9rem;
+  font-size: 1.05rem;
+  font-weight: 300;
+  color: #222C3A;
+  white-space: nowrap;
+  
+}
+
+.skills-list li img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  
+  
+}
+
