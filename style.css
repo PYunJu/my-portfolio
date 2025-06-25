@@ -397,7 +397,15 @@ body {
   width: 16px;
   height: 16px;
   object-fit: contain;
-  
-  
 }
 
+.skills-block {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.skills-block.show {
+  opacity: 1;
+  transform: translateX(0);
+}
